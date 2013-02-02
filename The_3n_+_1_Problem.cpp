@@ -8,6 +8,7 @@ int count_cycle_lenght( int );
 int max_cycle_lenght_between(int,int);
 
 int main(){
+
 	int n1;
 	int n2;
 	while ( (scanf ("%d%d",&n1,&n2))  != EOF){
@@ -15,9 +16,11 @@ int main(){
 		printf ("%d %d %d\n",n1,n2,max_cycle);
 	}
 	return 0;
+	
 }
 
 int max_cycle_lenght_between(int n1,int n2){
+	
 	int a = min (n1,n2);
 	int b = max (n1,n2);
 	int max_cycle = 0;
@@ -30,6 +33,7 @@ int max_cycle_lenght_between(int n1,int n2){
 }
 
 int  count_cycle_lenght( int n1){
+	
 	int count_cycle = 0;
 	while (n1 != 1 ){ 
 		if ( (n1 % 2)  == 0){
